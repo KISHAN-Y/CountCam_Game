@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountCam - Math Game for Kids</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Include Splash Screen -->
+    <div id="splash-screen"></div>
+
+    <!-- Include Onboarding Screen -->
+    <div id="onboarding-screen"></div>
+
+    <!-- Include Login Screen -->
+    <div id="login-screen"></div>
+
+    <!-- Include Home Screen -->
+    <div id="home-screen"></div>
+
+    <!-- Include Profile Screen -->
+    <div id="profile-screen"></div>
+
+    <!-- Include Profile Update Screen -->
+    <div id="profile-update-screen"></div>
+
+    <!-- Include Game Screen -->
+    <div id="game-screen"></div>
+
+    <!-- Include Settings Screen -->
+    <div id="settings-screen"></div>
+
+    <!-- Include Progress Tracker Screen -->
+    <div id="progress-tracker"></div>
+    <script>
+        // Load Onboarding Screen
+        fetch('screens/onboarding-screen.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('onboarding-screen').innerHTML = html;
+            });
+    </script>
+    <script src="js/api.js"></script>
+    <script src="js/user-manager.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

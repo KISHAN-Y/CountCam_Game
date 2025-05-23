@@ -1,0 +1,110 @@
+<div class="profile-screen hidden">
+    <header class="bg-white shadow-md py-4 px-6">
+        <div class="flex justify-between items-center">
+            <button id="back-to-home-from-profile" class="flex items-center text-gray-600 whitespace-nowrap">
+                <div class="w-6 h-6 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>Back</span>
+            </button>
+            <h1 class="text-xl font-bold text-gray-800">My Profile</h1>
+            <div class="w-6 h-6"></div>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8 pb-20">
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <div class="flex flex-col items-center">
+                <div class="relative mb-4">
+                    <div class="w-24 h-24 rounded-full overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=cute%20cartoon%20avatar%20of%20a%20fox%20character%2C%20simple%2C%20colorful%2C%20child-friendly%2C%20digital%20art%2C%20white%20background&width=96&height=96&seq=11&orientation=squarish"
+                            alt="Profile Avatar" class="w-full h-full object-cover">
+                    </div>
+                    <button id="edit-profile-avatar"
+                    class="absolute bottom-0 right-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-md whitespace-nowrap">
+                    <i class="ri-pencil-line text-white"></i>
+                </button>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-1">Emma Thompson</h2>
+                <p class="text-gray-600 mb-4">Age: 8</p>
+                <div class="flex space-x-4 mb-6">
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-gray-800">42</p>
+                        <p class="text-sm text-gray-600">Stars</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-gray-800">8</p>
+                        <p class="text-sm text-gray-600">Badges</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-gray-800">5</p>
+                        <p class="text-sm text-gray-600">Day Streak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">My Achievements</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center p-3 bg-yellow-50 rounded-xl">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                        <i class="ri-medal-fill ri-xl text-yellow-500"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-800">Math Star</p>
+                        <p class="text-sm text-gray-600">Earned Yesterday</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-3 bg-blue-50 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                        <i class="ri-fire-fill ri-xl text-blue-500"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-800">5 Day Streak</p>
+                        <p class="text-sm text-gray-600">Current Streak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Settings</h3>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-volume-up-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Sound Effects</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-notification-4-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Notifications</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-parent-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Parental Controls</span>
+                    </div>
+                    <button class="text-primary font-medium whitespace-nowrap">Manage</button>
+                </div>
+                <button id="sign-out-btn"
+                    class="w-full mt-4 py-3 bg-gray-100 text-gray-700 rounded-button font-medium hover:bg-gray-200 transition-all whitespace-nowrap">Sign
+                    Out</button>
+            </div>
+        </div>
+    </main>
+</div>

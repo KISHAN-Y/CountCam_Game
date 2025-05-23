@@ -1,0 +1,146 @@
+<div class="home-screen">
+    <div class="floating-symbols">
+        <span class="symbol" style="top: 10%; left: 20%;">+</span>
+        <span class="symbol" style="top: 30%; left: 80%;">-</span>
+        <span class="symbol" style="top: 50%; left: 40%;">×</span>
+        <span class="symbol" style="top: 70%; left: 10%;">÷</span>
+        <span class="symbol" style="top: 20%; left: 60%;">7</span>
+        <span class="symbol" style="top: 60%; left: 30%;">3</span>
+        <span class="symbol" style="top: 80%; left: 70%;">9</span>
+        <span class="symbol" style="top: 40%; left: 90%;">5</span>
+        <span class="symbol" style="top: 90%; left: 50%;">2</span>
+        <span class="symbol" style="top: 15%; left: 35%;">8</span>
+        <span class="symbol" style="top: 75%; left: 85%;">4</span>
+        <span class="symbol" style="top: 55%; left: 15%;">6</span>
+    </div>
+    <header class="bg-white shadow-md py-4 px-6">
+        <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-['Pacifico'] text-primary">CountCam</h1>
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-2">
+                    <img src="https://readdy.ai/api/search-image?query=cute+cartoon+avatar+of+a+fox+character%2C+simple%2C+colorful%2C+child-friendly%2C+digital+art%2C+white+background&width=40&height=40&seq=9&orientation=squarish"
+                        alt="User Avatar" class="w-full h-full object-cover">
+                </div>
+                <span class="text-gray-700 font-medium">Emma</span>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Let's Play and Learn!</h2>
+            <div class="flex justify-center mb-8">
+                <button id="play-now-btn"
+                    class="w-40 h-40 bg-primary rounded-full shadow-lg flex flex-col items-center justify-center transform hover:scale-105 transition-all whitespace-nowrap">
+                    <div class="w-16 h-16 flex items-center justify-center mb-2">
+                        <i class="ri-play-fill ri-2x text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">Play Now</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-green-100 rounded-2xl shadow-md p-6 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-book-open-line ri-lg text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Practice Mode</h3>
+                    <p class="text-gray-600 text-center mb-4">Learn at your own pace with no time limit</p>
+                    <button id="start-practice-btn"
+                        class="mt-auto bg-green-500 text-white py-3 px-6 rounded-button font-medium hover:bg-green-600 transition-all whitespace-nowrap">Start
+                        Practice</button>
+                </div>
+                <div class="bg-orange-100 rounded-2xl shadow-md p-6 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-timer-line ri-lg text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Time Challenge</h3>
+                    <p class="text-gray-600 text-center mb-4">Answer as many questions as you can in 60 seconds</p>
+                    <button id="start-challenge-btn"
+                        class="mt-auto bg-orange-500 text-white py-3 px-6 rounded-button font-medium hover:bg-orange-600 transition-all whitespace-nowrap">Start
+                        Challenge</button>
+                </div>
+                <div class="bg-purple-100 rounded-2xl shadow-md p-6 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-parent-line ri-lg text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Parent Challenge</h3>
+                    <p class="text-gray-600 text-center mb-4">Custom questions set by your parents</p>
+                    <button id="start-parent-challenge-btn"
+                        class="mt-auto bg-purple-500 text-white py-3 px-6 rounded-button font-medium hover:bg-purple-600 transition-all whitespace-nowrap">Start
+                        Challenge</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Your Progress</h3>
+                <div class="flex justify-between items-center mb-6">
+                    <div>
+                        <p class="text-gray-600 mb-1">Weekly Streak</p>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2">
+                                <i class="ri-fire-fill ri-lg text-orange-500"></i>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">5 Days</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-1">Total Stars</p>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2">
+                                <i class="ri-star-fill ri-lg text-yellow-500"></i>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">42</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-1">Badges</p>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2">
+                                <i class="ri-medal-fill ri-lg text-primary"></i>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-800">8</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="view-progress-btn"
+                    class="w-full bg-gray-100 text-gray-700 py-3 rounded-button font-medium hover:bg-gray-200 transition-all whitespace-nowrap">
+                    View Detailed Progress
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white shadow-inner py-4 px-6 fixed bottom-0 left-0 right-0">
+        <div class="flex justify-around">
+            <button id="nav-home-btn" class="flex flex-col items-center text-primary">
+                <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-home-5-fill ri-lg"></i>
+                </div>
+                <span class="text-xs mt-1">Home</span>
+            </button>
+            <button id="nav-progress-btn" class="flex flex-col items-center text-gray-400">
+                <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-bar-chart-line ri-lg"></i>
+                </div>
+                <span class="text-xs mt-1">Progress</span>
+            </button>
+            <button id="nav-profile-btn" class="flex flex-col items-center text-gray-400">
+                <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-user-smile-line ri-lg"></i>
+                </div>
+                <span class="text-xs mt-1">Profile</span>
+            </button>
+            <button id="nav-settings-btn" class="flex flex-col items-center text-gray-400">
+                <div class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-settings-3-line ri-lg"></i>
+                </div>
+                <span class="text-xs mt-1">Settings</span>
+            </button>
+        </div>
+    </footer>
+</div>

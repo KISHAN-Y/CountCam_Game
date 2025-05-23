@@ -1,0 +1,61 @@
+<div class="game-screen">
+    <header class="bg-white shadow-md py-4 px-6">
+        <div class="flex justify-between items-center">
+            <button id="back-to-home" class="flex items-center text-gray-600 whitespace-nowrap">
+                <div class="w-6 h-6 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>Back</span>
+            </button>
+            <div id="game-mode-header" class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                    <i class="ri-parent-line text-purple-500"></i>
+                </div>
+                <span id="game-mode-title" class="text-xl font-bold text-gray-800">Time Challenge</span>
+            </div>
+            <button id="hint-btn" class="flex items-center text-green-500 whitespace-nowrap">
+                <div class="w-6 h-6 flex items-center justify-center mr-1">
+                    <i class="ri-lightbulb-line"></i>
+                </div>
+                <span>Hint</span>
+            </button>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-6">
+        <div class="mb-6">
+            <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-timer-line text-orange-500"></i>
+                    </div>
+                    <span id="timer-display" class="text-2xl font-bold text-orange-500">60</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-star-fill text-yellow-500"></i>
+                    </div>
+                    <span id="score-display" class="text-2xl font-bold text-gray-800">0</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill bg-orange-500"></div>
+            </div>
+            <div class="flex justify-between text-sm text-gray-600 mt-1">
+                <span id="question-counter">Questions Answered: 0</span>
+            </div>
+        </div>
+        <div class="camera-feed rounded-2xl overflow-hidden mb-8"></div>
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">2 + 3 = ?</h2>
+            <p class="text-gray-600">Show the answer with your fingers!</p>
+        </div>
+        <div class="bg-primary bg-opacity-10 rounded-2xl p-6 text-center">
+            <div class="flex justify-center mb-4">
+                <div class="w-10 h-10 flex items-center justify-center">
+                    <i class="ri-lightbulb-line ri-lg text-primary"></i>
+                </div>
+            </div>
+            <p class="text-gray-700">Hold up the correct number of fingers in front of the camera</p>
+        </div>
+    </main>
+</div>

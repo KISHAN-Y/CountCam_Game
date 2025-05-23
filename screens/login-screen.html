@@ -1,0 +1,140 @@
+<div
+    class="login-screen min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white py-8 px-4">
+    <div
+        class="w-full max-w-md md:max-w-lg lg:max-w-xl bg-white rounded-3xl shadow-lg p-6 md:p-8 lg:p-10 relative overflow-hidden">
+        <!-- Decorative elements for desktop -->
+        <div class="absolute -top-20 -right-20 w-40 h-40 bg-blue-100 rounded-full opacity-50 hidden md:block"></div>
+        <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-green-100 rounded-full opacity-50 hidden md:block"></div>
+
+        <div class="text-center mb-3 relative">
+            <h1 class="text-4xl md:text-5xl font-['Pacifico'] text-primary mb-2 animate__animated animate__fadeIn">
+                CountCam</h1>
+            <p class="text-gray-600 md:text-lg">Choose how you want to play</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <button id="kids-login-btn"
+                class="flex items-center justify-center bg-primary text-white py-4 px-6 rounded-xl shadow-md hover:bg-blue-400 transition-all whitespace-nowrap transform hover:scale-105">
+                <div class="w-10 h-10 flex items-center justify-center mr-3">
+                    <i class="ri-user-smile-line ri-lg"></i>
+                </div>
+                <span class="text-lg font-medium">Kids Login</span>
+            </button>
+            <button id="kid-profile-btn"
+                class="flex items-center justify-center bg-[#FFA07A] text-white py-4 px-6 rounded-xl shadow-md hover:bg-orange-400 transition-all whitespace-nowrap transform hover:scale-105">
+                <div class="w-10 h-10 flex items-center justify-center mr-3">
+                    <i class="ri-user-smile-line ri-lg"></i>
+                </div>
+                <span class="text-lg font-medium">Kid Profile</span>
+            </button>
+            <button id="guest-btn"
+                class="flex items-center justify-center bg-[#9ACD32] text-white py-4 px-6 rounded-xl shadow-md hover:bg-green-500 transition-all whitespace-nowrap transform hover:scale-105">
+                <div class="w-10 h-10 flex items-center justify-center mr-3">
+                    <i class="ri-rocket-line ri-lg"></i>
+                </div>
+                <span class="text-lg font-medium">Play as Guest</span>
+            </button>
+        </div>
+
+        <!-- Kids Login Form -->
+        <div id="kids-login-form"
+            class="hidden relative z-10 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm mt-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800">Welcome Back!</h3>
+                <button id="back-from-login" class="text-gray-500 hover:text-primary">
+                    <i class="ri-arrow-left-line mr-1"></i> Back
+                </button>
+            </div>
+
+            <div class="mb-4">
+                <label for="login-username" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                <input type="text" id="login-username"
+                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-blue-100 transition-all"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-6">
+                <label for="login-password" class="block text-gray-700 font-medium mb-2">Password</label>
+                <input type="password" id="login-password"
+                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-blue-100 transition-all"
+                    placeholder="Enter your password" required>
+            </div>
+
+            <div id="login-error" class="hidden mb-4 p-3 bg-red-100 text-red-700 rounded-lg text-sm"></div>
+
+            <button id="login-btn"
+                class="w-full bg-primary text-white py-4 px-6 rounded-xl shadow-md hover:bg-blue-400 transition-all text-lg font-medium whitespace-nowrap transform hover:scale-105 hover:shadow-lg">
+                <span class="flex items-center justify-center">
+                    <i class="ri-login-box-line mr-2"></i>
+                    Login
+                </span>
+            </button>
+        </div>
+
+        <div id="profile-selection"
+            class="hidden relative z-10 bg-white p-5 pb-8 rounded-2xl border border-gray-100 shadow-sm mt-3 overflow-y-auto max-h-[90vh]">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800">Create Your Profile</h3>
+                <button id="back-to-login" class="text-gray-500 hover:text-primary">
+                    <i class="ri-arrow-left-line mr-1"></i> Back
+                </button>
+            </div>
+            <h4 class="text-lg font-medium text-gray-700 mb-3">Select Your Avatar</h4>
+            <div class="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6 mb-6">
+                <div
+                    class="avatar-option selected cursor-pointer transform hover:scale-110 transition-transform duration-200">
+                    <img src="https://readdy.ai/api/search-image?query=cute+cartoon+avatar+of+a+fox+character%2C+simple%2C+colorful%2C+child-friendly%2C+digital+art%2C+white+background&width=60&height=60&seq=5&orientation=squarish"
+                        alt="Fox Avatar" class="w-full h-full object-cover rounded-full border-4 border-primary">
+                </div>
+                <div class="avatar-option cursor-pointer transform hover:scale-110 transition-transform duration-200">
+                    <img src="https://readdy.ai/api/search-image?query=cute+cartoon+avatar+of+a+bear+character%2C+simple%2C+colorful%2C+child-friendly%2C+digital+art%2C+white+background&width=60&height=60&seq=6&orientation=squarish"
+                        alt="Bear Avatar" class="w-full h-full object-cover rounded-full border-4 border-transparent">
+                </div>
+                <div class="avatar-option cursor-pointer transform hover:scale-110 transition-transform duration-200">
+                    <img src="https://readdy.ai/api/search-image?query=cute+cartoon+avatar+of+a+rabbit+character%2C+simple%2C+colorful%2C+child-friendly%2C+digital+art%2C+white+background&width=60&height=60&seq=7&orientation=squarish"
+                        alt="Rabbit Avatar" class="w-full h-full object-cover rounded-full border-4 border-transparent">
+                </div>
+                <div class="avatar-option cursor-pointer transform hover:scale-110 transition-transform duration-200">
+                    <img src="https://readdy.ai/api/search-image?query=cute+cartoon+avatar+of+a+penguin+character%2C+simple%2C+colorful%2C+child-friendly%2C+digital+art%2C+white+background&width=60&height=60&seq=8&orientation=squarish"
+                        alt="Penguin Avatar"
+                        class="w-full h-full object-cover rounded-full border-4 border-transparent">
+                </div>
+            </div>
+            <div id="profile-error" class="hidden mb-2 p-3 bg-red-100 text-red-700 rounded-lg text-sm"></div>
+            <div class="grid grid-cols-1 gap-2 md:gap-2">
+                <div class="mb-2">
+                    <label for="username" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                    <input type="text" id="username"
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-blue-100 transition-all"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-2">
+                    <label for="user-password" class="block text-gray-700 font-medium mb-2">Password</label>
+                    <input type="password" id="user-password"
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-blue-100 transition-all"
+                        placeholder="Create a password" required>
+                </div>
+            </div>
+
+            <div class="flex items-center mt-2">
+                <input type="checkbox" id="remember"
+                    class="custom-checkbox mr-3 h-5 w-5 text-primary focus:ring-primary border-gray-300 rounded">
+                <label for="remember" class="text-gray-600 select-none">Remember me</label>
+            </div>
+
+            <button id="start-play-btn"
+                class="w-full bg-primary text-white py-4 px-6 rounded-xl shadow-md hover:bg-blue-400 transition-all text-lg font-medium whitespace-nowrap transform hover:scale-105 hover:shadow-lg sticky bottom-4 mt-4 md:mt-3">
+                <span class="flex items-center justify-center">
+                    <i class="ri-gamepad-line mr-2"></i>
+                    Start Playing
+                </span>
+            </button>
+
+            <div class="text-center mt-6 mb-2 text-sm text-gray-500">
+                <p>By continuing, you agree to our <a href="#" class="text-primary hover:underline">Terms</a> and <a
+                        href="#" class="text-primary hover:underline">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+</div>

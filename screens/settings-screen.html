@@ -1,0 +1,140 @@
+<div class="settings-screen hidden">
+    <header class="bg-white shadow-md py-4 px-6">
+        <div class="flex justify-between items-center">
+            <button id="back-to-home-from-settings" class="flex items-center text-gray-600 whitespace-nowrap">
+                <div class="w-6 h-6 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>Back</span>
+            </button>
+            <h1 class="text-xl font-bold text-gray-800">Settings</h1>
+            <div class="w-6 h-6"></div>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8 pb-20">
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">Game Settings</h3>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-volume-up-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Sound Effects</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-music-2-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Background Music</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-vibrate-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Vibration</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">Notifications</h3>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-notification-4-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Daily Reminders</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-trophy-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Achievement Alerts</span>
+                    </div>
+                    <label class="custom-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">Parental Controls</h3>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-timer-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Daily Time Limit</span>
+                    </div>
+                    <select class="bg-gray-100 text-gray-700 py-2 px-4 rounded-lg pr-8">
+                        <option>30 minutes</option>
+                        <option>1 hour</option>
+                        <option>2 hours</option>
+                        <option>No limit</option>
+                    </select>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-lock-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Content Restrictions</span>
+                    </div>
+                    <button class="text-primary font-medium whitespace-nowrap">Configure</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">Account</h3>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-user-settings-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Edit Profile</span>
+                    </div>
+                    <button id="settings-edit-profile-btn" class="text-primary font-medium whitespace-nowrap">Edit</button>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="ri-delete-bin-line ri-lg text-gray-600"></i>
+                        </div>
+                        <span class="text-gray-800">Delete Account</span>
+                    </div>
+                    <button id="settings-delete-account-btn" class="text-red-500 font-medium whitespace-nowrap">Delete</button>
+                </div>
+                <button id="settings-sign-out-btn"
+                    class="w-full mt-4 py-3 bg-gray-100 text-gray-700 rounded-button font-medium hover:bg-gray-200 transition-all whitespace-nowrap">Sign
+                    Out</button>
+            </div>
+        </div>
+    </main>
+</div>

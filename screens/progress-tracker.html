@@ -1,0 +1,170 @@
+<div class="progress-tracker">
+    <header class="bg-white shadow-md py-4 px-6">
+        <div class="flex justify-between items-center">
+            <button id="back-to-home-from-progress" class="flex items-center text-gray-600 whitespace-nowrap">
+                <div class="w-6 h-6 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>Back</span>
+            </button>
+            <h1 class="text-xl font-bold text-gray-800">Your Progress</h1>
+            <div class="w-6 h-6"></div> <!-- Empty div for flex alignment -->
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8 pb-20">
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Weekly Activity</h2>
+            <div class="bg-white rounded-2xl shadow-md p-6 mb-6">
+                <div class="flex justify-between mb-4">
+                    <span class="text-gray-600">May 16 - May 22, 2025</span>
+                    <div class="flex items-center text-primary">
+                        <span>This Week</span>
+                        <div class="w-5 h-5 flex items-center justify-center ml-1">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day completed mb-1">
+                            <span>M</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-check-line text-green-500"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day completed mb-1">
+                            <span>T</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-check-line text-green-500"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day completed mb-1">
+                            <span>W</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-check-line text-green-500"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day completed mb-1">
+                            <span>T</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-check-line text-green-500"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day completed mb-1">
+                            <span>F</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-check-line text-green-500"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day today mb-1">
+                            <span>S</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-time-line text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="calendar-day mb-1">
+                            <span>S</span>
+                        </div>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-more-line text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Your Stats</h3>
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <p class="text-gray-600 mb-1">Questions Answered</p>
+                        <p class="text-2xl font-bold text-gray-800">87</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-1">Accuracy</p>
+                        <p class="text-2xl font-bold text-gray-800">92%</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-1">Average Time</p>
+                        <p class="text-2xl font-bold text-gray-800">4.2s</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-1">Best Score</p>
+                        <p class="text-2xl font-bold text-gray-800">10/10</p>
+                    </div>
+                </div>
+                <div class="h-40 bg-gray-50 rounded-lg mb-4">
+                    <!-- Placeholder for chart -->
+                    <div class="w-full h-full flex items-center justify-center">
+                        <p class="text-gray-500">Weekly Progress Chart</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Your Badges</h2>
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col items-center">
+                        <div class="badge earned mb-2">
+                            <div class="w-10 h-10 flex items-center justify-center">
+                                <i class="ri-medal-fill ri-2x text-gray-700"></i>
+                            </div>
+                        </div>
+                        <span class="text-sm text-center text-gray-700">Math Star</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="badge earned mb-2">
+                            <div class="w-10 h-10 flex items-center justify-center">
+                                <i class="ri-fire-fill ri-2x text-gray-700"></i>
+                            </div>
+                        </div>
+                        <span class="text-sm text-center text-gray-700">5 Day Streak</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="badge earned mb-2">
+                            <div class="w-10 h-10 flex items-center justify-center">
+                                <i class="ri-timer-flash-fill ri-2x text-gray-700"></i>
+                            </div>
+                        </div>
+                        <span class="text-sm text-center text-gray-700">Speed Demon</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="badge earned mb-2">
+                            <div class="w-10 h-10 flex items-center justify-center">
+                                <i class="ri-add-circle-fill ri-2x text-gray-700"></i>
+                            </div>
+                        </div>
+                        <span class="text-sm text-center text-gray-700">Addition Pro</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="badge mb-2">
+                            <div class="w-10 h-10 flex items-center justify-center">
+                                <i class="ri-subtract-line ri-2x text-gray-400"></i>
+                            </div>
+                        </div>
+                        <span class="text-sm text-center text-gray-400">Subtraction Pro</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="badge mb-2">
+                            <div class="w-10 h-10 flex items-center justify-center">
+                                <i class="ri-calendar-check-fill ri-2x text-gray-400"></i>
+                            </div>
+                        </div>
+                        <span class="text-sm text-center text-gray-400">10 Day Streak</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
